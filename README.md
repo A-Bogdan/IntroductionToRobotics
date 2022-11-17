@@ -37,3 +37,16 @@ You will use the joystick to control the position ofthe segment and ”draw” o
 (default,  but  also  initiated  after  a  button  press  in  State 2): Current position blinking. Can use the joystick to move from one  position to neighbors. Short pressing the button toggles state 2. Long pressing the button in state 1 resets the entire display by turning all the segments OFF and moving the current position to the decimal point.
 #### State 2:
 (initiated after a button press in State 1): The current segment stops blinking, adopting the state of the segment before selection (ON or OFF). Toggling the X (or Y, you chose) axis should change the segment state from ON to OFF or from OFF to ON. Clicking the joystick should save the segment state and exit back to state 1.
+
+# Homework 4
+### Components
+a joystick, a 4 digit 7-segment display, a 74hc595 shiftregister
+### General description
+Use the joystick to move through the 4 digit 7-segment displays digits, press the button to lock in on the current digitand use the other axis to increment or decrement the number. Keep the button pressed to reset all the digit values and the current position to the first digit in the first state.
+### System states
+#### State 1:
+You can use a joystick axis to cycle through the 4 digits; using the other axis does nothing. A blinking decimal point shows the current digit position. When pressing the button, you lock in on the selected digit and enter the second state.
+#### State 2:
+in this state, the decimal point stays always on, no longer blinking and you can no longer use the axis to cycle throughthe 4 digits. Instead, using the other axis, you can increment or decrement the  number on the current digit IN HEX(aka from 0 to F, as in the lab). Pressing the button again returns you to the previous state. Also, keep in mind that when changing the number, you must increment it  for each joystick movement - it should not work continuosly increment if you keep the joystick in one position (aka with joyMoved).
+#### State 3:
+Reset: toggled by long pressing the button only in the first state. When resetting, all the digits go back to 0 and the current positionis set to the first (rightmost) digit, in the first state.
