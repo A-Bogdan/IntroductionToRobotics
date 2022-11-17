@@ -3,7 +3,7 @@ Introduction to Robotics homeworks, this is an optional course taken in the 4th 
 
 # Homework 1
 ### Components 
-RBG  LED  (1  minimum),  potentiometers  (3  minimum),resistors and wires (per logic).
+RGB  LED  (1  minimum),  potentiometers  (3  minimum),resistors and wires (per logic).
 ### Technical Task
 Use a separate potentiometer in controlling each of the colors of the RGB led (Red, Green and Blue).  The control must be done with digital electronics(you must read the value of the potentiometer with Arduino, and write a mapped value to each of the pins connected to the led).
 
@@ -40,7 +40,7 @@ You will use the joystick to control the position ofthe segment and ”draw” o
 
 # Homework 4
 ### Components
-a joystick, a 4 digit 7-segment display, a 74hc595 shiftregister
+A joystick, a 4 digit 7-segment display, a 74hc595 shift register
 ### General description
 Use the joystick to move through the 4 digit 7-segment displays digits, press the button to lock in on the current digitand use the other axis to increment or decrement the number. Keep the button pressed to reset all the digit values and the current position to the first digit in the first state.
 ### System states
@@ -50,3 +50,5 @@ You can use a joystick axis to cycle through the 4 digits; using the other axis 
 in this state, the decimal point stays always on, no longer blinking and you can no longer use the axis to cycle throughthe 4 digits. Instead, using the other axis, you can increment or decrement the  number on the current digit IN HEX(aka from 0 to F, as in the lab). Pressing the button again returns you to the previous state. Also, keep in mind that when changing the number, you must increment it  for each joystick movement - it should not work continuosly increment if you keep the joystick in one position (aka with joyMoved).
 #### State 3:
 Reset: toggled by long pressing the button only in the first state. When resetting, all the digits go back to 0 and the current positionis set to the first (rightmost) digit, in the first state.
+### Video
+Live testing [here](https://youtube.com/shorts/MHQ47NJ0rJc?feature=share).
