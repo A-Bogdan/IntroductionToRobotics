@@ -68,4 +68,4 @@ This homework's task is to create a mini game using the mentioned components whi
 #### ! All items except "Start game" will display a unique drawing on the LED matrix;
 
 ### Video
-Live testing [here]([https://youtube.com/shorts/MHQ47NJ0rJc?feature=share](https://youtu.be/uA6aWR-w0Tc)).
+Live testing [here](https://youtube.com/shorts/MHQ47NJ0rJc?feature=share](https://youtu.be/uA6aWR-w0Tc).
